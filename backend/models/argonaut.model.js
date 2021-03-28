@@ -9,6 +9,12 @@ const argonautSchema = new Schema(
             required: true,
             unique: true,
             minlenght: 3,
+        },
+        tags:{
+            type: [{
+                type: String,
+                minlenght: 3,
+            }],
         }
     },
     {
