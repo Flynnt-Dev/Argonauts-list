@@ -25,7 +25,9 @@ router.route('/add').post((req, res)=>{
     try{
         if(existingArgonaut !== null){
             console.log({argonautName}+" is already in the list.");
-            return res.status(400).json({errorMessage:'This Argonaut is already in the list! Jason, please choose another Argonaut.'});
+            return res.status(400).json({
+                errorMessage:'This Argonaut is already in the list! Jason, please choose another Argonaut.'
+            });
         }
         else if(argonautName.lenght < 3){
             console.log('A name cannot be less than 3 letters.');
