@@ -24,4 +24,4 @@ const argonautSchema = new Schema(
 
 const Argonaut = mongoose.model('Argonaut', argonautSchema);
 
-module.exports = User;
+module.exports = Argonaut;
