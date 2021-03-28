@@ -36,7 +36,7 @@ router.route('/add').post((req, res)=>{
 
         newArgonaut.save()
             .catch((err)=> res.status(400).json( 'Error 400: '+err))
-            .finally( console.log( 'New argonaut added!'));
+            .finally(console.log( 'New argonaut added!'));
 
     }catch(err){
         console.log(err);
@@ -44,8 +44,15 @@ router.route('/add').post((req, res)=>{
     }
 });
 
-
 /**
- *  DELETE Argonaut -
+ *  DELETE Argonaut - Delete One by Id
  */
 
+router.route('/:id').delete((req, res)=>{
+    Argonaut.findById(req.params.id)
+        .catch((err)=> res.status(400).json( 'Error 400: '+err))
+        .finally(res.json('Argonaut '+ req.params.id +' deleted.'))
+})
+
+
+module.exports = router;
