@@ -11,7 +11,6 @@ const Argonaut = props => (
     </tr>
 )
 
-
 export default class ArgonautsList extends React.Component{
     constructor(props){
         super(props);

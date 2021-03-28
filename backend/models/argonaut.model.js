@@ -10,7 +10,7 @@ const argonautSchema = new Schema(
             unique: true,
             minlenght: 3,
         },
-        tags:{
+        tags: {
             type: [{
                 type: String,
                 minlenght: 3,
