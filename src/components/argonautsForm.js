@@ -10,8 +10,8 @@ export default class ArgonautsForm extends React.Component{
         
         this.state = {
             name:'',
-            tags:[],
-        }
+            tags:[]
+        };
     }
 
     onChangeArgonautName(e){
@@ -58,8 +58,8 @@ export default class ArgonautsForm extends React.Component{
                                 <input 
                                     type="text" required
                                     className="imput-text"
-                                    value={this.state.name}   // A REMPLIR 
-                                    onChange={this.onChangeArgonautName} // A REMPLIR 
+                                    value={this.state.name}   
+                                    onChange={this.onChangeArgonautName}  
                                 />
                             </div>
                         </div>
@@ -69,8 +69,8 @@ export default class ArgonautsForm extends React.Component{
                                 <input 
                                     type="text" required
                                     className="imput-text"
-                                    value={this.state.tags}   // A REMPLIR 
-                                    onChange={this.onChangeArgonautTags} // A REMPLIR 
+                                    value={this.state.tags}   
+                                    onChange={this.onChangeArgonautTags}
                                 />
                             </div>
                         </div>
