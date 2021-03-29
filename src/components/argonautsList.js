@@ -30,7 +30,7 @@ export default class ArgonautsList extends React.Component{
     }
 
     argonautsList(){
-        return this.state.argonautsmap(currentargonaut => {
+        return this.state.argonauts.map(currentargonaut => {
             return <Argonaut 
                         argonaut={currentargonaut}
                         deleteArgonaut={this.deleteArgonaut}
@@ -49,19 +49,21 @@ export default class ArgonautsList extends React.Component{
     }
 
     render(){
-        <div>
-            <h3> Membre de l'équipage :</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nom</th>
-                        <th className="tags">Qalifications</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {this.argonautsList()}
-                </tbody>
-            </table>
-        </div>
+        return(
+            <div>
+                <h3> Membre de l'équipage :</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th className="tags">Qalifications</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.argonautsList()}
+                    </tbody>
+                </table>
+            </div>
+        )
     }
 }

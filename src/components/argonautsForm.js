@@ -44,7 +44,7 @@ export default class ArgonautsForm extends React.Component{
     }
 
     render(){
-            <section id='argonautImput'>
+        return(
                 <form>
                     <div className="form-group">
                         <label>Argonaut Name:</label>
@@ -68,6 +68,7 @@ export default class ArgonautsForm extends React.Component{
                         />
                     </div>
                 </form>
-            </section>
+        )
+            
     }
 }
