@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container{
+  display:grid;
+  grid-template-rows:  auto 1fr auto;
+  width: 100vw;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.argonautsForm{
+  display: grid;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+div .form-group{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin: 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-element-wrapper{
+  display: grid;
+  align-items: flex-end;
 }
+div .imput{
+  width: 400px;
+  justify-items: flex-end;
+}
+
+label{
+  width:auto;
+  margin: 0 5px;
+}
+
+.imput-text{
+  width:250px;
+}
+
+.submit-group{width: 100%;justify-items: center;}
+
+.submit{
+  width: 100%;
+}
+
+header {
+  /* position: absolute;
+  left:0; */
+  width: 100%;
+  min-width: 425px;
+  height: 20%;
+  min-height: 120px;
+  background: #f4f4f4;
+  text-align: center;
+  padding: 0.5em;
+}
+
+header img {
+  max-width: 96px;
+  margin: 0 1em;
+}
+
+header h1 {
+  font-size: 2em;
+  padding: 1em 0;
+}
+
+.home-body{
+  width:100%;
+  height:80%;
+}
+
+
+#argonautsList .argonautsList{
+  margin: 20px 0;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+footer {
+  /* position: absolute;
+  top: calc((100vh) - (100px));
+  left:0; */
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: #f76c6c;
+}
+

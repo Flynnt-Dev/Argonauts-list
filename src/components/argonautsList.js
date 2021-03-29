@@ -50,7 +50,7 @@ export default class ArgonautsList extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className="argonautsList">
                 <h3> Membre de l'équipage :</h3>
                 <table>
                     <thead>
@@ -65,5 +65,6 @@ export default class ArgonautsList extends React.Component{
                 </table>
             </div>
         )
+        
     }
 }

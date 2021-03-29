@@ -10,7 +10,7 @@ export default class ArgonautsForm extends React.Component{
         
         this.state = {
             name:'',
-            tags:[''],
+            tags:[],
         }
     }
 
@@ -45,30 +45,41 @@ export default class ArgonautsForm extends React.Component{
 
     render(){
         return(
-                <form>
+                <form className="argonautsForm">
                     <div className="form-group">
-                        <label>Argonaut Name:</label>
-                        <input 
-                            type="text" required className="form-control"
-                            value={this.state.name}   // A REMPLIR 
-                            onchange={this.onChangeArgonautName} // A REMPLIR 
-                        />
-                        <label>Qualifications:</label>
-                        <input 
-                            type="text" required className="form-control"
-                            value={this.state.tags}   // A REMPLIR 
-                            onchange={this.onChangeArgonautTags} // A REMPLIR 
-                        />
-                    </div>
-                    <div className="form-group">
-                        <input 
-                            type="submit"
-                            className="btn btn-primary"
-                            value="insert argonaut"  
-                        />
+                        <div className="from-element-wrapper">
+                            <div className="imput">
+                                <label>Argonaut Name:</label>
+                                <input 
+                                    type="text" required
+                                    className="imput-text"
+                                    value={this.state.name}   // A REMPLIR 
+                                    onChange={this.onChangeArgonautName} // A REMPLIR 
+                                />
+                            </div>
+                        </div>
+                        <div className="form-element-wrapper">
+                            <div className="imput">
+                                <label>Qualifications:</label>
+                                <input 
+                                    type="text" required
+                                    className="imput-text"
+                                    value={this.state.tags}   // A REMPLIR 
+                                    onChange={this.onChangeArgonautTags} // A REMPLIR 
+                                />
+                            </div>
+                        </div>
+                        <div className="form-element-wrapper">
+                            <div className="submit-group">
+                                    <input 
+                                        type="submit"
+                                        className="btn btn-primary"
+                                        value="insert argonaut"  
+                                    />
+                                </div>
+                        </div>
                     </div>
                 </form>
         )
-            
     }
 }
