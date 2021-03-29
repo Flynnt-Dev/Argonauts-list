@@ -43,14 +43,14 @@ export default class ArgonautsForm extends React.Component{
 
         this.setState({
             name: '',
-            tags: [''],
+            tags: [],
         })
         
     }
 
     render(){
         return(
-                <form className="argonautsForm">
+                <form className="argonautsForm" onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <div className="from-element-wrapper">
                             <div className="imput">
