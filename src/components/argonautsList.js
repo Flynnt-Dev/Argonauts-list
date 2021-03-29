@@ -20,7 +20,7 @@ export default class ArgonautsList extends React.Component{
     }
 
     componentDidMount(){
-        axios.get('http:localhost:5000/argonauts/')
+        axios.get('http://localhost:5000/argonauts/')
         .then(response =>{
             this.setState({argonauts: response.data});
         })
@@ -40,7 +40,7 @@ export default class ArgonautsList extends React.Component{
     }
 
     deleteArgonaut(id){
-        axios.delete('http:localhost:5000/argonauts/'+id)
+        axios.delete('http://localhost:5000/argonauts/'+id)
             .then( res => console.log(res.data));
             
         this.setState({
