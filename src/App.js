@@ -5,8 +5,6 @@ import './App.css';
 
 import Home from './components/home.js';
 
-// test new git config
-
 function App() {
   return (
     <Router>
