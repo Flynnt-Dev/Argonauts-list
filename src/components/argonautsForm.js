@@ -24,11 +24,16 @@ export default class ArgonautsForm extends React.Component{
 
     onSubmit(e){
         e.preventDefault();
-
+        console.log('OnSubmit fonction');
+        
         const argonaut= {
             name: this.state.name,
             tags: this.state.tags
         }
+
+        console.log(
+            'Argonout is {name : '+this.state.name+" tags: "+this.state.tags+'}.'
+        );
 
         axios.post('http://localhost:5000/argonauts/add', argonaut)
             .then(res => console.log(res.data))
